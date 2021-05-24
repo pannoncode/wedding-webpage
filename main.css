@@ -1,0 +1,74 @@
+/* ===Basic===  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(pictures/wedding-landing-background.png) no-repeat center;
+    background-size: cover;
+}
+
+.tagline h3 {
+    color: hsla(0, 0%, 100%, .9);
+    font-family: 'Libre Baskerville', serif;
+}
+
+.text h1 {
+    color: #d2ba87;
+    font-family: 'Great Vibes', cursive;
+}
+
+span {
+    color: hsla(0, 0%, 100%, .9);
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+/*  ===Header-mobile=== */
+
+.cover {
+    background: url(pictures/wedding-landing-cover.jpeg) no-repeat 70% center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+.title-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text {
+    background-color: hsla(100, 0%, 0%, .6);
+    padding: .5rem 0;
+}
+
+.tagline h3 {
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    padding-top: .8rem;
+}
+
+.tagline hr {
+    width: 13rem;
+    color: hsla(0, 0%, 100%, .9);
+}
+
+.text h1 {
+    font-size: 3.2rem;
+    padding: 1.1rem 0;
+}
+
+.date {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+
+.date hr {
+    display: inline-block;
+    width: 1.2rem;
+    vertical-align: middle;
+}
