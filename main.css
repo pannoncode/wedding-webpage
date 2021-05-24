@@ -44,6 +44,7 @@ span {
 .text {
     background-color: hsla(100, 0%, 0%, .6);
     padding: .5rem 0;
+    margin: 0 auto;
 }
 
 .tagline h3 {
@@ -71,4 +72,23 @@ span {
     display: inline-block;
     width: 1.2rem;
     vertical-align: middle;
+}
+
+
+/*==Desktop header==*/
+
+@media (min-width: 768px) {
+    .text {
+        width: 50%;
+        padding: 1rem 0;
+    }
+    .tagline h3 {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    .text h1 {
+        font-size: 7rem;
+        padding: 2rem 0;
+    }
 }
