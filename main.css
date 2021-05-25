@@ -199,3 +199,22 @@ hr {
         text-align: center;
     }
 }
+
+
+/* =====Gifts-mobile-desktop===== */
+
+.gifts {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.gifts h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.gifts p {
+    font-family: 'Libre Baskerville', serif;
+    padding: 2rem;
+    font-size: 1.1rem;
+}
