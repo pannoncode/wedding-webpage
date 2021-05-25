@@ -163,3 +163,39 @@ hr {
         width: 0;
     }
 }
+
+
+/* =====Program-mobile===== */
+
+.program {
+    background-color: hsla(100, 0%, 0%, .6);
+    color: #d2ba87;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1rem;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.program h1 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.quote p {
+    padding-bottom: 2rem;
+}
+
+.time-list ul {
+    line-height: 1.6;
+}
+
+
+/* =====Program-desktop===== */
+
+@media (min-width: 768px) {
+    .program {
+        text-align: center;
+    }
+}
