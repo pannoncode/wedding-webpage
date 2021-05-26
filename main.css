@@ -9,6 +9,15 @@ body {
     background-size: cover;
 }
 
+a {
+    color: #bd806e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eda087;
+}
+
 
 /* ==========Header=========== */
 
@@ -143,8 +152,8 @@ img {
 
 hr {
     width: 30%;
-    margin: 0 auto;
-    color: black;
+    border: 0 solid;
+    border-bottom: .2rem solid grey;
 }
 
 
@@ -216,5 +225,82 @@ hr {
 .gifts p {
     font-family: 'Libre Baskerville', serif;
     padding: 2rem;
+    font-size: 1.1rem;
+}
+
+
+/* =====Question&Answers-mobile===== */
+
+.q-a {
+    text-align: center;
+    background-color: hsla(100, 0%, 0%, .6);
+    color: #d2ba87;
+    padding: 2rem 1rem;
+}
+
+.q-a h1 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.q-abox h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem 0 .5rem 0;
+}
+
+.q-abox p {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.bold-text {
+    padding: 1rem 0 .3rem 0;
+    font-weight: bold;
+}
+
+.q-abox hr {
+    width: 50%;
+    border: 0 solid;
+    border-bottom: .2rem solid #d2ba87;
+    padding: 1rem;
+}
+
+
+/*===Question&Answers-desktop===*/
+
+@media (min-width: 768px) {
+    .q-a {
+        margin: 0 auto;
+    }
+    .q-abox {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        padding: 1rem;
+    }
+    .q-abox hr {
+        border: 0;
+    }
+}
+
+
+/* =====Contact-mobile===== */
+
+.contact {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contact h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.contact p {
+    font-family: 'Libre Baskerville', serif;
+    padding: 1.5rem;
     font-size: 1.1rem;
 }
