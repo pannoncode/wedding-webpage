@@ -5,8 +5,7 @@
 }
 
 body {
-    background: url(pictures/wedding-landing-background.png) no-repeat center;
-    background-size: cover;
+    background: url(pictures/wedding-landing-background.png) repeat center;
 }
 
 a {
@@ -65,9 +64,13 @@ span {
     padding-top: .8rem;
 }
 
-.tagline hr {
-    width: 13rem;
-    color: hsla(0, 0%, 100%, .9);
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
 }
 
 .text h1 {
@@ -78,6 +81,17 @@ span {
 .date {
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
+}
+
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
 }
 
 
@@ -128,6 +142,15 @@ span {
     font-family: 'Mulish', sans-serif;
 }
 
+.group::after {
+    display: block;
+    content: "";
+    background-color: #444349;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+}
+
 .group h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.6rem;
@@ -144,12 +167,6 @@ img {
     padding: .5rem 0;
 }
 
-hr {
-    width: 30%;
-    border: 0 solid;
-    border-bottom: .2rem solid grey;
-}
-
 
 /*==Ceremony, photos, party desktop==*/
 
@@ -162,8 +179,8 @@ hr {
         width: 30%;
         padding-bottom: 1.3rem;
     }
-    hr {
-        width: 0;
+    .group::after {
+        display: none;
     }
 }
 
@@ -180,7 +197,7 @@ hr {
     padding-left: 1rem;
 }
 
-.program h1 {
+.program h2 {
     text-align: center;
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
@@ -212,7 +229,7 @@ hr {
     padding: 2rem 0;
 }
 
-.gifts h1 {
+.gifts h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
 }
@@ -233,7 +250,7 @@ hr {
     padding: 2rem 1rem;
 }
 
-.q-a h1 {
+.q-a h2 {
     text-align: center;
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
@@ -256,13 +273,6 @@ hr {
     font-weight: bold;
 }
 
-.q-abox hr {
-    width: 50%;
-    border: 0 solid;
-    border-bottom: .2rem solid #d2ba87;
-    padding: 1rem;
-}
-
 
 /*===Question&Answers-desktop===*/
 
@@ -276,9 +286,6 @@ hr {
         width: 30%;
         padding: 1rem;
     }
-    .q-abox hr {
-        border: 0;
-    }
 }
 
 
@@ -289,7 +296,7 @@ hr {
     padding: 2rem 0;
 }
 
-.contact h1 {
+.contact h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
 }
